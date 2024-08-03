@@ -66,6 +66,7 @@ Properties:
 
 - c++
 - csharp
+- csharpUnity
 - coffeescript
 - dart
 - go
