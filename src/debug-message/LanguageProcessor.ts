@@ -43,6 +43,8 @@ export class GeneralLanguageProcessor implements LanguageProcessor {
         return 'puts';
       case 'csharp':
         return 'Console.WriteLine';
+      case 'csharpUnity':
+        return 'Debug.Log';
       case 'shellscript':
         return 'echo';
       case 'cpp':
@@ -72,6 +74,7 @@ export class GeneralLanguageProcessor implements LanguageProcessor {
       case 'swift':
         return `${printFunction}(${variableName})${semicolon}`;
       case 'csharp':
+      case 'csharpUnity':
       case 'java':
       case 'rust':
       case 'dart':
@@ -115,6 +118,7 @@ export class GeneralLanguageProcessor implements LanguageProcessor {
       case 'javascript':
       case 'typescript':
       case 'csharp':
+      case 'csharpUnity':
       case 'cpp':
       case 'rust':
       case 'kotlin':
@@ -155,6 +159,7 @@ export class GeneralLanguageProcessor implements LanguageProcessor {
       case 'kotlin':
       case 'scala':
       case 'csharp':
+      case 'csharpUnity':
       case 'coffeescript':
       case 'ruby':
       case 'perl':
@@ -185,6 +190,7 @@ export class GeneralLanguageProcessor implements LanguageProcessor {
       case 'kotlin':
       case 'scala':
       case 'csharp':
+      case 'csharpUnity':
       case 'coffeescript':
       case 'ruby':
       case 'dart':
@@ -209,6 +215,7 @@ export class GeneralLanguageProcessor implements LanguageProcessor {
       case 'go':
       case 'java':
       case 'csharp':
+      case 'csharpUnity':
       case 'python':
       case 'swift':
       case 'ruby':

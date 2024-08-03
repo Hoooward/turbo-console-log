@@ -15,6 +15,7 @@ describe('GeneralLanguageProcessor', () => {
     ruby: 'puts',
     swift: 'print',
     csharp: 'Console.WriteLine',
+    csharpUnity: 'Debug.Log',
     shellscript: 'echo',
     perl: 'print',
   };
@@ -50,6 +51,7 @@ describe('GeneralLanguageProcessor', () => {
                 expectedResult = `${logFunctionByLanguageId || logFunction[languageId]}(${variableName})${semicolon}`;
                 break;
               case 'csharp':
+              case 'csharpUnity':
               case 'java':
                 expectedResult = `${logFunctionByLanguageId || logFunction[languageId]}(${variableName});`;
                 break;
